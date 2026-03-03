@@ -242,8 +242,8 @@ User is now created 🎉
 
 Important:
 
-> ❌ Do NOT create roles based only on job titles
-> ✅ Create roles based on required permissions
+- Do NOT create roles based only on job titles
+- Create roles based on required permissions
 
 ---
 
@@ -690,13 +690,13 @@ Response: Force password reset
 
 This lab demonstrates core IAM concepts using Microsoft Entra ID:
 
-✔ Identity lifecycle
-✔ RBAC
-✔ MFA
-✔ Conditional Access
-✔ Risk-based policies
-✔ External collaboration
-✔ Licensing
+- Identity lifecycle
+- RBAC
+- MFA
+- Conditional Access
+- Risk-based policies
+- External collaboration
+- Licensing
 
 IAM is not just configuration — it is strategy.
 
