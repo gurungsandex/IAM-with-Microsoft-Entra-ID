@@ -135,6 +135,11 @@ Identity management means managing users from:
 * Mover (Role change)
 * Leaver (Employee exit)
 
+---
+
+# Creating a User in Microsoft Entra ID
+Creating a user in Microsoft Entra ID generates a unique digital identity within a secure cloud directory. Once this object is established, administrators can instantly provision access by assigning the user to security groups, granting resource permissions, or designating specific roles.
+
 
 Deleted users remain recoverable for **30 days**.
 
@@ -142,10 +147,6 @@ After 30 days → permanently deleted.
 
 ⚠ You cannot restore permanently deleted users.
 
----
-
-# Creating a User in Microsoft Entra ID
-Creating a user in Microsoft Entra ID generates a unique digital identity within a secure cloud directory. Once this object is established, administrators can instantly provision access by assigning the user to security groups, granting resource permissions, or designating specific roles.
 
 Let’s do this step-by-step.
 
@@ -397,6 +398,8 @@ https://admin.cloud.microsoft/
 ---
 
 ## Assign License to Group (Recommended for Large Organizations)
+
+It's the same process as assigning licenses to users. 
 
 Benefits:
 
