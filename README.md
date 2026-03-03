@@ -145,6 +145,7 @@ After 30 days → permanently deleted.
 ---
 
 # Creating a User in Microsoft Entra ID
+Creating a user in Microsoft Entra ID generates a unique digital identity within a secure cloud directory. Once this object is established, administrators can instantly provision access by assigning the user to security groups, granting resource permissions, or designating specific roles.
 
 Let’s do this step-by-step.
 
@@ -195,6 +196,9 @@ This ensures strong password security.
 ---
 
 ### Step 4: Assign Directory Roles
+A directory role assignment is the process of granting a specific set of administrative permissions to a user, group, or service principal within Microsoft Entra ID. It essentially connects an identity (who) with a role definition (what permissions) at a certain scope (where those permissions apply).
+
+The primary goal of role assignment is delegated administration based on the principle of least privilege. Instead of giving everyone "Global Administrator" access, you assign only the specific tools a person needs to do their job.
 
 Go to **Assignments tab**
 
@@ -271,6 +275,9 @@ Create a custom role.
 
 ### What is a Custom Role?
 
+A custom role is a tailored set of administrative permissions that you create when Microsoft Entra's built-in roles are either too broad or too restrictive.
+They are primarily used to implement the principle of least privilege, ensuring staff have only the exact access they need to perform their duties.
+
 A custom role is a tailored set of permissions such as:
 
 * microsoft.directory/users/create
@@ -308,6 +315,12 @@ You can assign:
 ---
 
 # Enable Authentication Methods (MFA)
+
+MFA (Multi-Factor Authentication) is your primary defense against identity-based attacks. It is important because it ensures that even if a hacker steals a user's password, they cannot gain access without a second piece of evidence (a "factor").
+Identity Verification: It requires a user to provide two or more forms of evidence:
+- Something you know: (Password or PIN)
+- Something you have: (Smartphone app, hardware token, or FIDO2 key)
+- Something you are: (Biometrics like a fingerprint or facial recognition) 
 
 MFA is critical in Zero Trust.
 
@@ -355,6 +368,8 @@ User cannot access system until registration is complete.
 ---
 
 # License Assignment
+
+License assignment is the process of allocating specific Microsoft service plans (like Microsoft 365, Power BI, or Entra ID P2) to a user identity. Without an assigned license, a user may exist in the directory but will be unable to access core productivity tools or advanced security features.
 
 Licenses unlock advanced security features.
 
@@ -442,6 +457,8 @@ Admins must use two authentication methods.
 
 # Smart Lockout
 
+Smart Lockout is a security feature in Microsoft Entra ID that identifies and blocks "bad actors" trying to guess user passwords while keeping the account accessible for the legitimate user. It uses cloud intelligence to distinguish between a sign-in attempt coming from the actual user versus one coming from an attacker.
+
 Smart Lockout protects against brute-force attacks.
 
 It uses:
@@ -469,6 +486,8 @@ It distinguishes between:
 ---
 
 # Creating Security Groups
+
+Security Group is a collection of identities used to manage access to resources like Enterprise Applications and Conditional Access policies at scale. They are created to replace the tedious process of manual per-user configuration with inherited permissions. 
 
 Security groups manage access to:
 
@@ -505,6 +524,9 @@ Security groups manage access to:
 ---
 
 # Managing External Collaboration (Guest Users)
+
+In Microsoft Entra ID, external collaborators are Guest Users from outside your company who you invite to work in your environment.
+You use them because it’s safer and easier than creating a new employee account for someone who is not your internal staff. They log in using their own existing email and password (from their own company or a service like Gmail), so you don't have to manage their credentials. 
 
 External Users (Guest Users):
 
@@ -556,6 +578,8 @@ Guest user must accept invitation. They have no access until assigned.
 
 # Add Enterprise Applications
 
+Adding an enterprise application is like connecting a "third-party door" to your company's master security system. You do this so employees can use their single Microsoft login to access tools like Zoom or Salesforce, eliminating the need for dozens of different passwords. 
+
 ### Steps:
 
 1. Go to **Enterprise Applications**
@@ -585,6 +609,9 @@ Guest user must accept invitation. They have no access until assigned.
 ---
 
 # Conditional Access Policies
+
+Conditional Access is the "intelligent gatekeeper" of Microsoft Entra ID. It is a policy-based engine that evaluates real-time signals like who the user is, where they are, and what device they are using—before deciding whether to allow, block, or challenge a sign-in attempt with MFA.
+Conditional Access is vital because it shifts security from "static" (is the password right?) to "adaptive" (is this login safe right now?). It allows you to enforce Zero Trust principles by "verifying explicitly" every single access request.
 
 Conditional Access is the "if-then" engine.
 
@@ -623,6 +650,10 @@ Example:
 ---
 
 # Sign-in Risk & User Risk Policies
+
+User Risk identifies accounts with leaked credentials (often forcing a password reset), while Sign-in Risk flags suspicious login attempts, such as impossible travel or logins from anonymous IP addresses. 
+
+These are essential because they provide proactive, real-time defense that goes beyond passwords, automatically challenging or blocking attackers without requiring manual intervention from an IT admin.
 
 ## Sign-in Risk Policy
 
