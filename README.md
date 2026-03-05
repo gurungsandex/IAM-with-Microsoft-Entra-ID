@@ -25,6 +25,7 @@
 16. Adding Enterprise Applications
 17. Conditional Access Policies
 18. Managing Sign-in Risk & User Risk Policies
+19. Microsoft Entra Gobal Secure Access (GSA)
 
 ---
 
@@ -687,6 +688,26 @@ Response: Force password reset
 
 ---
 
+Microsoft Entra Global Secure Access (GSA) is a unified Security Service Edge (SSE) solution that secures access to internet, SaaS, and private corporate resources using Zero Trust principles. It replaces traditional VPNs by routing user traffic through Microsoft’s global network, enabling granular security policies (like per-app MFA) based on user, device, and location.
+
+GSA is comprised of two primary products built on Zero Trust principles: 
+- Microsoft Entra Internet Access: An identity-centric Secure Web Gateway (SWG) that secures access to the public internet, SaaS apps, and Microsoft 365 services.
+- Microsoft Entra Private Access: A Zero Trust Network Access (ZTNA) solution that provides secure, per-app connectivity to private corporate resources (on-premises or in private clouds) without requiring a traditional VPN.
+
+When the Microsoft traffic profile is enabled, Microsoft Entra Internet Access captures and secures traffic going to Microsoft cloud services such as Exchange Online, SharePoint Online, and other Microsoft 365 services.
+
+This allows organizations to inspect, monitor, and enforce security policies on traffic accessing Microsoft services.
+
+<img width="1251" height="939" alt="image" src="https://github.com/user-attachments/assets/0cb36997-491b-4050-941f-79343c612be3" />
+
+To enforce these controls on user devices, the Global Secure Access client application must be installed on the endpoint. The client redirects and secures outbound traffic so that Microsoft Entra can evaluate and apply access policies.
+
+Administrators can also configure tenant restrictions, which define which Microsoft tenants or organizations users are allowed or blocked from accessing. This helps prevent users from signing into unauthorized external tenants using corporate devices.
+
+By combining Microsoft Entra Internet Access, Conditional Access, and Global Secure Access, organizations can enforce Zero Trust policies and reduce the risk of identity-based attacks targeting Microsoft services.
+
+
+
 
 This lab demonstrates core IAM concepts using Microsoft Entra ID:
 
@@ -697,6 +718,7 @@ This lab demonstrates core IAM concepts using Microsoft Entra ID:
 - Risk-based policies
 - External collaboration
 - Licensing
+- Global Secure Access (GSA)
 
 IAM is not just configuration — it is strategy.
 
