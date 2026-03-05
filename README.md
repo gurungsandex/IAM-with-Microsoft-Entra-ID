@@ -11,7 +11,7 @@
 2. Why IAM Is Important
 3. Understanding Zero Trust (Microsoft Entra ID)
 4. Core IAM Pillars
-5. Get a Free Trial Subscription 
+5. Microsoft Entra ID P2 - Free Trial Subscription 
 6. Identity Lifecycle Management
 7. Creating Users in Microsoft Entra ID
 8. Role-Based Access Control (RBAC)
