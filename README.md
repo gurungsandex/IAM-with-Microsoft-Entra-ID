@@ -688,6 +688,7 @@ Response: Force password reset
 
 ---
 
+# Microsoft Entra Global Secure Access (GSA)
 Microsoft Entra Global Secure Access (GSA) is a unified Security Service Edge (SSE) solution that secures access to internet, SaaS, and private corporate resources using Zero Trust principles. It replaces traditional VPNs by routing user traffic through Microsoft’s global network, enabling granular security policies (like per-app MFA) based on user, device, and location.
 
 GSA is comprised of two primary products built on Zero Trust principles: 
@@ -700,13 +701,23 @@ This allows organizations to inspect, monitor, and enforce security policies on 
 
 <img width="1251" height="939" alt="image" src="https://github.com/user-attachments/assets/0cb36997-491b-4050-941f-79343c612be3" />
 
+<img width="1545" height="933" alt="image" src="https://github.com/user-attachments/assets/32a229ca-f227-4ce9-891e-9b283d70732d" />
+
 To enforce these controls on user devices, the Global Secure Access client application must be installed on the endpoint. The client redirects and secures outbound traffic so that Microsoft Entra can evaluate and apply access policies.
 
-Administrators can also configure tenant restrictions, which define which Microsoft tenants or organizations users are allowed or blocked from accessing. This helps prevent users from signing into unauthorized external tenants using corporate devices.
+<img width="1145" height="696" alt="image" src="https://github.com/user-attachments/assets/407c14ed-6cd8-47c4-9040-3297bf8913c1" />
+
+<img width="523" height="330" alt="image" src="https://github.com/user-attachments/assets/6bff11da-bed5-4a05-997f-e481adc6da3f" />
+
+
+Administrators can configure tenant restrictions, which define which Microsoft tenants or organizations users are allowed or blocked from accessing. This helps prevent users from signing into unauthorized external tenants using corporate devices.
 
 By combining Microsoft Entra Internet Access, Conditional Access, and Global Secure Access, organizations can enforce Zero Trust policies and reduce the risk of identity-based attacks targeting Microsoft services.
 
 
+### Continued ....
+
+---
 
 
 This lab demonstrates core IAM concepts using Microsoft Entra ID:
