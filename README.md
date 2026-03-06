@@ -597,7 +597,7 @@ Adding an enterprise application is like connecting a "third-party door" to your
 
 ---
 
-## Assign App to Guest User
+## Assign App to User
 
 1. Go to Enterprise apps
 2. Select App
